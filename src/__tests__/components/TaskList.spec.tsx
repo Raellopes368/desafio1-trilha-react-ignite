@@ -92,8 +92,8 @@ describe('App Page', () => {
 
     fireEvent.click(addedFirstTaskRemoveButton);
 
-    expect(addedFirstTaskTitle).toBeInTheDocument()
-    expect(addedSecondTaskTitle).not.toBeInTheDocument();
+    expect(addedFirstTaskTitle).not.toBeInTheDocument()
+    expect(addedSecondTaskTitle).toBeInTheDocument();
   })
 
   it('should be able to check a task', () => {
